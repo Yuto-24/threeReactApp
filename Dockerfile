@@ -39,5 +39,5 @@ RUN echo "alias ll='ls -al'" >> ~/.bashrc \
 # コンテナログイン時のディレクトリ指定
 
 WORKDIR /projects
-# ADD ./run.sh /
+ADD .jsbeaurifyrc.sh /projects
 # CMD [ "/run.sh" ]
