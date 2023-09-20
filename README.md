@@ -26,4 +26,12 @@ docker-compose down && docker-compose build --no-cache && docker-compose up -d &
 ```bash
 git config user.name Yuto-24
 git config user.email utomatsu@gmail.com
+
+echo "# avilen_JDLE" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/Yuto-24/avilen_JDLE.git
+git push -u origin master
 ```
