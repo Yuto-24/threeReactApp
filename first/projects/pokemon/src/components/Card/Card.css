@@ -1,0 +1,24 @@
+.card {
+    width: 290px;
+    -moz-box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.35);
+    -ms-box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.35);
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.35);
+    background-color: floralwhite;
+    border-radius: 8px;
+    margin: 20px 10px;
+}
+
+.cardName {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cardInfo {
+    text-align: center;
+}
+
+
+/* .typeContainer {
+    border: 3px double blanchedalmond;
+} */
