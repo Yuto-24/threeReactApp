@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { getAllPokemon, getPokemon } from './utils/pokemon';
 import { Navbar } from './components/Navbar/Navbar'
 import { Card } from './components/Card/Card'
-import './App.css';
+import "./App.css"
 
 function App() {
 
@@ -26,7 +26,7 @@ function App() {
     setLoading(true);
 
     // すべてのポケモンデータを取得
-    let res = await getAllPokemon(url);
+    let res: any = await getAllPokemon(url);
     console.log(res);
     setAllPokeNum(res.count);
 
@@ -50,11 +50,11 @@ function App() {
   }
 
   const handlePrevPage = async () => {
-    !prevURL ? 0 : loadPage(prevURL);
+    !prevURL || loadPage(prevURL);
     setCurPokeNum(curPokeNum - pokePerPage);
   };
   const handleNextPage = async () => {
-    !nextURL ? 0 : loadPage(nextURL);
+    !nextURL || loadPage(nextURL);
     loadPage(nextURL);
     setCurPokeNum(curPokeNum + pokePerPage);
   };
